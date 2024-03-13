@@ -39,34 +39,46 @@
             android:id="@+id/txt_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
+            android:layout_marginStart="150dp"
             android:layout_marginTop="312dp"
             android:text="@string/name"
+            android:gravity="center"
             android:textSize="@dimen/_40dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_contact"
-            style="@style/style_button"
-            android:text="@string/contact_us"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_share"
-            style="@style/style_button"
-            android:layout_marginStart="232dp"
-            android:text="@string/share"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_contact"
+                style="@style/style_button"
+                android:text="@string/contact_us"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_share"
+                style="@style/style_button"
+                android:text="@string/share"
+           android:layout_marginStart="50dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_about"
             style="@style/style_button2"
-            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="496dp"
             android:text="@string/about_us"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -76,6 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="152dp"
             android:layout_marginTop="588dp"
+
             android:backgroundTint="@color/m_gray"
             android:text="@string/logoout"
             android:textColor="@color/black"
